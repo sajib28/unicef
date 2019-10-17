@@ -1,20 +1,79 @@
 /*theme Setting*/
-$theme-color:#1bac91;
-$white:#fff;
-$black:#000;
-$grey-white:#ddd;
-$grey-black:#f8f8f8;
-@mixin transition($args...) {
-	-webkit-transition: $args;
-	-moz-transition: $args;
-	-ms-transition: $args;
-	-o-transition: $args;
-	transition: $args;
+/*------------------------Font Setup---------------------------*/
+/*------------------------Font Setup---------------------------*/
+@font-face {
+    font-family: 'kalpurushregular';
+    src: url('../fonts/kalpurush-webfont.ttf') format('ttf'),
+        url('../fonts/kalpurush-webfont.woff2') format('woff2'),
+        url('../fonts/kalpurush-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-$transition:all 0.3s ease-in-out;
+/*------------------------End Font Setup---------------------------*/
+
+/*------------------------Font Setup---------------------------*/
+$theme-color:#1CABE2;
+$fonts:'kalpurushregular';
+$white:#fff;
+$black:#000;
+$grey-white:#E4E4E4;
+$grey-black:#f8f8f8;
+/*------------------------Font Setup---------------------------*/
+
+/*------------------------Cross Browsers compatibility Supported Css---------------------------*/
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -moz-transition: $property;
+    -ms-transform: $property;
+    -o-transition: $property;
+    transform: $property;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin box-shadow($left, $top, $blur, $color) {
+    -webkit-box-shadow: $left $top $blur $color;
+    -moz-box-shadow: $left $top $blur $color;
+    -ms-box-shadow: $left $top $blur $color;
+    -o-box-shadow: $left $top $blur $color;
+    box-shadow: $left $top $blur $color;
+}
+
+@mixin translate($args) {
+    transform: translate($args);
+    transform: -webkit-translate($args);
+    transform: -moz-translate($args);
+    transform: -ms-translate($args);
+    transform: -o-translate($args);
+}
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+/*------------------------Cross Browsers compatibility Supported Css---------------------------*/
+/*------------------------Common css-------------------------------*/
 body {
-	font-family: 'Titillium Web', sans-serif;
+    font-family: $fonts;
 }
 
 h1,
@@ -23,96 +82,102 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Titillium Web', sans-serif;
-	margin: 0 0 15px 0;
-	padding: 0;
+    font-family: $fonts;
+    margin: 0 0 15px 0;
+    padding: 0;
 }
 
 h2 {
-	font-size: 40px;
-	font-weight: 700;
+    font-size: 40px;
+    font-weight: 700;
 }
 
 h3 {
-	font-size: 25px;
-	font-weight: 600;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 p,
 span {
-	font-family: 'Titillium Web', sans-serif;
+    font-family: $fonts;
 }
 
 ul {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 a {
-	font-family: 'Titillium Web', sans-serif;
+    font-family: $fonts;
 }
-.cus-btn{
-	text-decoration: none;
-	color:$white;
-	background: $theme-color;
-	padding: 3px 15px 5px;
-&:hover{
-	text-decoration: none;
-	background: rgba($theme-color,0.9);
-	color:$white;
+
+.cus-btn {
+    text-decoration: none;
+    color: $white;
+    background: $theme-color;
+    padding: 3px 15px 5px;
+
+    &:hover {
+        text-decoration: none;
+        background: rgba($theme-color, 0.9);
+        color: $white;
+    }
 }
-}
+
 #preloader {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 9999;
-	overflow: hidden;
-	background:$white;
-	&::before{
-		content: "";
-		position: fixed;
-		top: calc(50% - 30px);
-		left: calc(50% - 30px);
-		border: 6px solid #f2f2f2;
-		border-top: 6px solid #0078ff;
-		border-radius: 50%;
-		width: 60px;
-		height: 60px;
-		-webkit-animation: animate-preloader 1s linear infinite;
-		animation: animate-preloader 1s linear infinite;
-	}
-  }
-  @-webkit-keyframes animate-preloader {
-	0% {
-	  -webkit-transform: rotate(0deg);
-	  transform: rotate(0deg);
-	}
-  
-	100% {
-	  -webkit-transform: rotate(360deg);
-	  transform: rotate(360deg);
-	}
-  }
-  
-  @keyframes animate-preloader {
-	0% {
-	  -webkit-transform: rotate(0deg);
-	  transform: rotate(0deg);
-	}
-  
-	100% {
-	  -webkit-transform: rotate(360deg);
-	  transform: rotate(360deg);
-	}
-  }
-  .back-to-top{
-	position: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: $white;
+
+    &::before {
+        content: "";
+        position: fixed;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+        border: 6px solid #f2f2f2;
+        border-top: 6px solid #0078ff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        -webkit-animation: animate-preloader 1s linear infinite;
+        animation: animate-preloader 1s linear infinite;
+    }
+}
+
+@-webkit-keyframes animate-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.back-to-top {
+    position: fixed;
     display: none;
-    background:$theme-color;
-    color:$white;
+    background: $theme-color;
+    color: $white;
     width: 44px;
     height: 44px;
     text-align: center;
@@ -122,412 +187,110 @@ a {
     right: 15px;
     bottom: 15px;
     z-index: 11;
-	  i{
-		padding-top: 12px;
-		color: $white;
-	  }
-  }
- 
+
+    i {
+        padding-top: 12px;
+        color: $white;
+    }
+}
+
 section {
-	padding: 80px 0 90px;
+    padding: 80px 0 90px;
 }
 
 .section-header {
-	padding-bottom: 25px;
+    padding-bottom: 25px;
 }
-
-/*End Theme Setting*/
+.container-fluid {
+	max-width: 1800px;
+  }
+  .container{
+	max-width: 1200px;
+  }
+  ul[role="tablist"]{
+	  display: none;
+  }
+/*------------------------End Common css-------------------------------*/
 /*Navbar Menu*/
 nav#mainNav {
-	background: $theme-color;
-	padding: 10px 0;
-	@include transition(all 0.3s ease-in-out);
-	
-	.navbar-brand {
-		color: $white;
-		font-size: 30px;
-		margin: 0;
-		padding: 0;
-	}
+    background: $theme-color;
+    padding: 10px 0;
+    @include transition(all 0.3s ease-in-out);
 
-	ul {
-		li {
-			a {
-				color: $white;
-				font-size: 18px;
-				padding: 10px 10px;
-			}
-		}
-	}
+    .navbar-brand {
+        color: $white;
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        li {
+            a {
+                color: $white;
+                font-size: 18px;
+                padding: 10px 10px;
+            }
+        }
+    }
 }
+
 nav#mainNav.navbar-expand-md.navbar-reduce {
-	box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
-	@include transition(all 0.3s ease-in-out);
-	padding: 5px 0;
+    box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+    @include transition(all 0.3s ease-in-out);
+    padding: 5px 0;
 
-	ul {
-		li {
-			a {
-				color: $white;
-				font-size: 18px;
-				padding: 10px 10px;
-			}
-		}
-	}
+    ul {
+        li {
+            a {
+                color: $white;
+                font-size: 18px;
+                padding: 10px 10px;
+            }
+        }
+    }
 }
-
 
 /*End Navbar Menu*/
-/*Home Slider*/
-section#slider {
-	padding: 0;
-	position: relative;
-	margin-top:86px;
 
-	ol {
-		li {
-			background-color: $white;
-			padding: 3px;
-		}
-	}
+/**/
 
-	h5 {
-
-		padding: 10px;
-		font-size: 25px;
-	}
-
-	.carousel {
-		&:after {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			content: '';
-			background: rgba($black, .5);
-			left: 0;
-			right: 0;
-			bottom: 0;
-			top: 0;
-		}
-		.carousel-caption {
-			top: 160px;
-			bottom: inherit;
-			text-align: left;
-			left: 9%;
-			width: 50%;
-
-			h2 {
-				font-size: 60px;
-				text-transform: uppercase;
-				font-weight: 700;
-				margin-bottom:10px; 
-	
-			}
-	
-			p {
-	
-				font-size: 25px;
-				font-weight: 400;
-				margin: 0;
-				padding: 0;
-				line-height: 35px;
-			}
-		}
-		.carousel-indicators{
-			bottom:40px;
-		}
-	}
-
-	p {
-
-		padding: 10px;
-		font-size: 16px;
-	}
-
+form#example-form {
+    margin-top: 95px;
 }
-
-/*End Home Slider*/
-/*About*/
-#about {
-	.content {
-		p {
-			text-align: justify;
-		}
-	}
-
-}
-
-/*End About*/
-
-/*Service*/
-#service {
-	background: #f5f8fd;
-
-	.service-box {
-		padding: 30px;
-		position: relative;
-		overflow: hidden;
-		border-radius: 10px;
-		background: #fff;
-		box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-		transition: all 0.3s ease-in-out;
-		text-align: center;
-
-		.icon-circle i {
-			background: #ddd;
-			border-radius: 50%;
-			width: 100px;
-			height: 100px;
-			line-height: 100px;
-			color: #fff;
-			font-size: 50px;
-			@include transition(all 0.3s ease);
-			// transition:all 0.3s ease-in-out;
-		}
-
-		&:hover .icon-circle i {
-			background: $theme-color;
-		}
-
-		.service-content {
-			margin: 20px 0 0;
-		}
-	}
-}
-
-/*End Service*/
-
-/*Project*/
-#project {
-	background: $white;
-
-	.nav {
-		margin-bottom: 30px;
-	}
-
-	li {
-		a {
-			cursor: pointer;
-			margin: 0 6px;
-		}
-
-		a.mixitup-control-active {
-			background: #1bac91;
-			color: #fff;
-			border-radius: 5px;
-		}
-	}
-
-
-
-	.project-item {
-		margin: 0 0 40px;
-
-		h3 {
-			margin-top: 15px;
-		}
-
-		p {}
-	}
-
-	.project-item {
-		.project-inner {
-			position: relative;
-		}
-
-		.overlay {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			margin-top: -25px;
-			margin-left: -62px;
-			visibility: hidden;
-			transition: $transition;
-			transform: scale(0);
-			width: 126px;
-			height: 50px;
-
-			i {
-				width: 50px;
-				height: 50px;
-				background: #fff;
-				border-radius: 50%;
-				text-align: center;
-				line-height: 50px;
-				margin: 0 5px;
-			}
-		}
-
-		.project-img {
-			position: relative;
-
-			&:after {
-				content: "";
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				width: 100%;
-				background: rgba($theme-color,0.85);
-				transform: scale(0);
-				visibility: hidden;
-				transition: $transition;
-			}
-		}
-
-		&:hover .project-img:after {
-			visibility: visible;
-			transform: scale(1);
-		}
-
-
-		&:hover .overlay {
-
-			visibility: visible;
-			transform: scale(1);
-		}
-		
-	}
-
-}
-
-/*End project*/
-
-/*Start Test{imonial*/
-#testimonial {
-	background: $grey-black;
-
-	img {
-		width: 150px;
-		height: 150px;
-		margin: 0 auto;
-	}
-
-	h3 {
-		margin-top: 10px;
-		margin-bottom: 5px;
-	}
-
-	p {
-		margin-top: 25px;
-		font-size: 20px;
-		font-style: italic;
-	}
-}
-
-/*End Testimonial*/
-
-/*Start  Blog*/
-#blog {
-	h3 {
-		margin-top: 15px;
-	}
-	i{
-		position: relative;
-		top:2px;
-	}
-}
-
-/*End  Blog*/
-/*Start  Blog*/
-#client {
-	background: $grey-black;
-}
-
-/*End  Blog*/
-
-/*Team*/
-#team {
-	background: #f8f8f8;
-
-	.team-slider {
-		h3 {
-			margin-top: 25px;
-			margin-bottom: 3px;
-		}
-
-		p {}
-	}
-}
-
-/*End Team*/
 #footer {
-	background: $theme-color;
-	padding: 60px 0;
-	color: $white;
-	.footer-top{
-		h4 {
-			font-size: 20px;
-		}
-	
-		p {
-			font-size: 15px;
-			line-height: 1.5;
-		}
-		ul {
-			li {
-				list-style-type: none;
-	
-				a {
-					color: #fff;
-					font-size: 15px;
-					text-decoration: none;
-				}
-				&:hover{
+    background: $theme-color;
+    padding: 60px 0;
+    color: $white;
 
-				}
-			}
-		}
-		.social-links {
-			a {
-				border-radius: 50%;
-				color: $white;
-				display: inline-block;
-				height: 40px;
-				line-height: 40px;
-				margin: 8px 2px;
-				text-align: center;
-				text-decoration: none;
-				@include transition(all 0.3s ease);
-				width: 40px;
-				border: 1px solid $white;
-			}
-		}
-	
-		form {
-			.input-group {
-				width: 100%;
-			}
-	
-			input {
-				outline: 0;
-				border: 0;
-				border-radius: 0;
-	
-				&:focus,&:active{
-					outline:0;
-					box-shadow:none;
-				}
-			}
-	
-			a {
-				font-size: 30px;
-				line-height: 38px;
-				color: $theme-color;
-				background: $white;
-				padding: 0 15px;
-				border-left: 2px solid $theme-color;
-			}
-	}
-	
-}
-	.footer-bottom {
-		border-top: 1px solid $grey-white;
-		padding-top: 60px;
-		margin-top: 60px;
-	}
-}
-/*Responsive css*/
-@media (min-width: 1024px) and (max-width: 1280px) {
+    h4 {
+        font-size: 20px;
+    }
 
+    p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    ul {
+        li {
+            list-style-type: none;
+
+            a {
+                color: #fff;
+                font-size: 15px;
+                text-decoration: none;
+            }
+
+            &:hover {}
+        }
+    }
+
+    .social-links {
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+    }
 
 }
