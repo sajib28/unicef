@@ -1,0 +1,147 @@
+/*theme Setting*/
+body {
+  font-family: 'Titillium Web', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Titillium Web', sans-serif; }
+
+h2 {
+  font-size: 40px;
+  font-weight: 700; }
+
+h3 {
+  font-size: 25px;
+  font-weight: 600; }
+
+p, span {
+  font-family: 'Titillium Web', sans-serif; }
+
+a {
+  font-family: 'Titillium Web', sans-serif; }
+
+section {
+  padding: 60px 0; }
+
+.section-header {
+  padding-bottom: 25px; }
+
+/*End Theme Setting*/
+/*Navbar Menu*/
+nav.navbar {
+  background: #1bac91; }
+  nav.navbar .nav-link {
+    color: #fff; }
+  nav.navbar .navbar-brand {
+    color: #fff;
+    font-size: 30px; }
+
+/*End Navbar Menu*/
+/*Home Slider*/
+section#slider {
+  padding: 0; }
+  section#slider h5 {
+    background: rgba(27, 172, 145, 0.8);
+    padding: 10px;
+    font-size: 25px; }
+  section#slider p {
+    background: rgba(27, 172, 145, 0.8);
+    padding: 10px;
+    font-size: 16px; }
+
+/*End Home Slider*/
+/*Service*/
+#service {
+  background: #f5f8fd; }
+  #service .service-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: center; }
+    #service .service-box .icon-circle i {
+      background: #ddd;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      color: #fff;
+      font-size: 50px;
+      transition: all 0.3s ease-in-out; }
+    #service .service-box:hover .icon-circle i {
+      background: #1bac91; }
+    #service .service-box .service-content {
+      margin: 20px 0 0; }
+
+/*End Service*/
+/*Project*/
+#project {
+  background: #fff; }
+  #project .nav {
+    margin-bottom: 30px; }
+  #project li a {
+    cursor: pointer;
+    margin: 0 6px; }
+  #project li a.mixitup-control-active {
+    background: #1bac91;
+    color: #fff;
+    border-radius: 5px; }
+  #project .project-item {
+    margin: 0 0 40px; }
+    #project .project-item h3 {
+      margin-top: 15px; }
+  #project .project-item .project-inner {
+    position: relative; }
+  #project .project-item .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -62px;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+    width: 124px;
+    height: 50px; }
+    #project .project-item .overlay i {
+      width: 50px;
+      height: 50px;
+      background: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 50px;
+      margin: 0 5px; }
+  #project .project-item .project-img {
+    position: relative; }
+    #project .project-item .project-img:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      background: #1bac91;
+      transform: scale(0);
+      visibility: hidden;
+      transition: all 0.3s ease-in-out; }
+  #project .project-item:hover .project-img:after {
+    visibility: visible;
+    transform: scale(1); }
+  #project .project-item:hover .overlay {
+    visibility: visible;
+    transform: scale(1); }
+
+/*End project*/
+/*Team*/
+#team {
+  background: #f8f8f8; }
+  #team .team-slider h3 {
+    margin-top: 25px; }
+
+/*End Team*/
+footer {
+  background: #1bac91;
+  padding: 60px; }
+
+/*# sourceMappingURL=main.css.map */

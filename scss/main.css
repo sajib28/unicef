@@ -1,0 +1,486 @@
+/*theme Setting*/
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+p,
+span {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.cus-btn {
+  text-decoration: none;
+  color: #fff;
+  background: #1bac91;
+  padding: 3px 15px 5px;
+}
+
+.cus-btn:hover {
+  text-decoration: none;
+  background: rgba(27, 172, 145, 0.9);
+  color: #fff;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader::before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #f2f2f2;
+  border-top: 6px solid #0078ff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #1bac91;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 15px;
+  z-index: 11;
+}
+
+.back-to-top i {
+  padding-top: 12px;
+  color: #fff;
+}
+
+section {
+  padding: 80px 0 90px;
+}
+
+.section-header {
+  padding-bottom: 25px;
+}
+
+/*End Theme Setting*/
+/*Navbar Menu*/
+nav#mainNav {
+  background: #1bac91;
+  padding: 10px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+nav#mainNav .navbar-brand {
+  color: #fff;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav#mainNav ul li a {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 10px;
+}
+
+nav#mainNav.navbar-expand-md.navbar-reduce {
+  box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 5px 0;
+}
+
+nav#mainNav.navbar-expand-md.navbar-reduce ul li a {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 10px;
+}
+
+/*End Navbar Menu*/
+/*Home Slider*/
+section#slider {
+  padding: 0;
+  position: relative;
+  margin-top: 86px;
+}
+
+section#slider ol li {
+  background-color: #fff;
+  padding: 3px;
+}
+
+section#slider h5 {
+  padding: 10px;
+  font-size: 25px;
+}
+
+section#slider .carousel:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+section#slider .carousel .carousel-caption {
+  top: 160px;
+  bottom: inherit;
+  text-align: left;
+  left: 9%;
+  width: 50%;
+}
+
+section#slider .carousel .carousel-caption h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+section#slider .carousel .carousel-caption p {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  line-height: 35px;
+}
+
+section#slider .carousel .carousel-indicators {
+  bottom: 40px;
+}
+
+section#slider p {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/*End Home Slider*/
+/*About*/
+#about .content p {
+  text-align: justify;
+}
+
+/*End About*/
+/*Service*/
+#service {
+  background: #f5f8fd;
+}
+
+#service .service-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+#service .service-box .icon-circle i {
+  background: #ddd;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  color: #fff;
+  font-size: 50px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#service .service-box:hover .icon-circle i {
+  background: #1bac91;
+}
+
+#service .service-box .service-content {
+  margin: 20px 0 0;
+}
+
+/*End Service*/
+/*Project*/
+#project {
+  background: #fff;
+}
+
+#project .nav {
+  margin-bottom: 30px;
+}
+
+#project li a {
+  cursor: pointer;
+  margin: 0 6px;
+}
+
+#project li a.mixitup-control-active {
+  background: #1bac91;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#project .project-item {
+  margin: 0 0 40px;
+}
+
+#project .project-item h3 {
+  margin-top: 15px;
+}
+
+#project .project-item .project-inner {
+  position: relative;
+}
+
+#project .project-item .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -62px;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+  width: 126px;
+  height: 50px;
+}
+
+#project .project-item .overlay i {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 5px;
+}
+
+#project .project-item .project-img {
+  position: relative;
+}
+
+#project .project-item .project-img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(27, 172, 145, 0.85);
+  transform: scale(0);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+#project .project-item:hover .project-img:after {
+  visibility: visible;
+  transform: scale(1);
+}
+
+#project .project-item:hover .overlay {
+  visibility: visible;
+  transform: scale(1);
+}
+
+/*End project*/
+/*Start Test{imonial*/
+#testimonial {
+  background: #f8f8f8;
+}
+
+#testimonial img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+#testimonial h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#testimonial p {
+  margin-top: 25px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+/*End Testimonial*/
+/*Start  Blog*/
+#blog h3 {
+  margin-top: 15px;
+}
+
+#blog i {
+  position: relative;
+  top: 2px;
+}
+
+/*End  Blog*/
+/*Start  Blog*/
+#client {
+  background: #f8f8f8;
+}
+
+/*End  Blog*/
+/*Team*/
+#team {
+  background: #f8f8f8;
+}
+
+#team .team-slider h3 {
+  margin-top: 25px;
+  margin-bottom: 3px;
+}
+
+/*End Team*/
+#footer {
+  background: #1bac91;
+  padding: 60px 0;
+  color: #fff;
+}
+
+#footer .footer-top h4 {
+  font-size: 20px;
+}
+
+#footer .footer-top p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+#footer .footer-top ul li {
+  list-style-type: none;
+}
+
+#footer .footer-top ul li a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+#footer .footer-top .social-links a {
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  margin: 8px 2px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 40px;
+  border: 1px solid #fff;
+}
+
+#footer .footer-top form .input-group {
+  width: 100%;
+}
+
+#footer .footer-top form input {
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+#footer .footer-top form input:focus, #footer .footer-top form input:active {
+  outline: 0;
+  box-shadow: none;
+}
+
+#footer .footer-top form a {
+  font-size: 30px;
+  line-height: 38px;
+  color: #1bac91;
+  background: #fff;
+  padding: 0 15px;
+  border-left: 2px solid #1bac91;
+}
+
+#footer .footer-bottom {
+  border-top: 1px solid #ddd;
+  padding-top: 60px;
+  margin-top: 60px;
+}
+
+/*Responsive css*/

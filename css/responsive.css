@@ -1,0 +1,707 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1366px) {
+  
+
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+ 
+  .navbar-brand img {
+    max-width: 140px;
+}
+ul.navbar-nav.nav-right.list-unstyled {
+    margin-left:20px;
+}
+.navbar-nav li a {
+    padding: 2px 10px !important;
+    font-size: 16px;
+    border-radius: 20px;
+}
+ul.navbar-nav.nav-right li a {
+    padding: 10px 15px !important;
+}
+
+  /*Home Slider*/
+  .home-slider .slider-caption h2 {
+    font-size: 60px;
+    line-height: 75px;
+    text-transform: uppercase;
+    padding: 30px 0 30px;
+}
+.home-slider .slider-caption p {
+    margin-bottom: 45px;
+}
+.home-slider {
+    margin: 50px 0 45px;
+}
+.owl-theme.home-slider .owl-dots {
+    bottom: 10px;
+}
+
+/*Footer*/
+.footer-bottom p {
+    text-align: left;
+    margin-right: 0;
+}
+.footer-top-link p {
+    font-size: 12px;
+}
+.footer-top-link li {
+    font-size: 12px;
+}
+.footer-top-link li a {
+    font-size: 12px;
+}
+.footer-top {
+    padding-top: 80px;
+    margin-top: -75px;
+}
+footer#footer h3 {
+    margin-top: 30px;
+}
+footer#footer img {
+    margin-top: 35px;
+}
+/*End Footer*/
+
+/*Team*/
+#team{
+  padding: 80px 0 80px;
+}
+
+.team-info li span {
+    font-size: 55px;
+}
+.team-info li {
+    padding: 0 30px;
+}
+.play-area {
+    height: 235px;
+}
+/*End Team*/
+section {
+    padding: 40px 0;
+}
+
+.filer-list li.nav-item {
+    padding: 5px 15px;
+    margin: 0 2px;
+}
+/*End Project*/
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 992px) and (max-width: 1024px) {
+
+ul.navbar-nav.nav-right.list-unstyled {
+    margin-left:0;
+}
+.navbar-nav li a {
+    padding: 2px 10px !important;
+    font-size: 14px;
+    border-radius: 12px;
+}
+ul.navbar-nav.nav-right li a {
+    padding: 10px 10px !important;
+}
+/*Home Slider*/
+  .home-slider .slider-caption h2 {
+    font-size: 60px;
+    line-height: 75px;
+    text-transform: uppercase;
+    padding: 30px 0 30px;
+}
+.home-slider .slider-caption p {
+    margin-bottom: 45px;
+}
+.home-slider {
+    margin: 50px 0 45px;
+}
+.owl-theme.home-slider .owl-dots {
+    bottom: 10px;
+}
+
+/*Footer*/
+.footer-bottom p {
+    text-align: left;
+    margin-right: 0;
+}
+.footer-top-link p {
+    font-size: 12px;
+}
+.footer-top-link li {
+    font-size: 12px;
+}
+.footer-top-link li a {
+    font-size: 12px;
+}
+.footer-top {
+    padding-top: 80px;
+    margin-top: -75px;
+}
+footer#footer h3 {
+    margin-top: 30px;
+}
+footer#footer img {
+    margin-top: 35px;
+}
+/*End Footer*/
+
+/*Team*/
+#team{
+  padding: 80px 0 80px;
+}
+#team .into-title h2 {
+    font-size: 34px;
+}
+.team-info li span {
+    font-size: 55px;
+}
+.team-info li {
+    padding: 0 30px;
+}
+.play-area {
+    height: 235px;
+}
+/*End Team*/
+/*Project*/
+section {
+    padding: 40px 0;
+}
+
+.filer-list li.nav-item {
+    padding: 5px 15px;
+    margin: 0 2px;
+}
+/*End Project*/
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+   .navbar-brand img {
+    max-width: 140px;
+}
+ul.navbar-nav.nav-right.list-unstyled {
+    margin-left:20px;
+}
+.navbar-nav li a {
+    padding: 2px 3px !important;
+    font-size: 12px;
+    border-radius: 12px;
+}
+ul.navbar-nav.nav-right li a {
+    padding: 10px 5px !important;
+}
+  /*Home Slider*/
+
+  .home-slider .slider-caption h2 {
+    font-size: 60px;
+    line-height: 75px;
+    text-transform: uppercase;
+    padding: 30px 0 30px;
+}
+.home-slider .slider-caption p {
+    margin-bottom: 45px;
+}
+.home-slider {
+    margin: 50px 0 45px;
+}
+/*End Home Slider*/
+
+/*Footer*/
+.box-inner.footer-top-link {
+    margin-bottom: 15px;
+}
+footer#footer h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+}
+footer#footer img {
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+ul.footer-menu.list-unstyled.inline-block {
+    margin-left: 0;
+}
+.footer-bottom p {
+    text-align: left;
+}
+/*End Footer*/
+/*Blog*/
+p.blog-info {
+    font-size: 12px;
+}
+#blog p.info {
+    font-size: 16px;
+    line-height: 25px;
+}
+/*End Blog*/
+/*Team*/
+#team{
+  padding: 80px 0 80px;
+}
+#team .into-title h2 {
+    font-size: 34px;
+}
+.team-info li span {
+    font-size: 50px;
+}
+.team-info li {
+    padding: 0 10px;
+}
+.play-area {
+    height: 235px;
+}
+/*End Team*/
+
+/*Project*/
+section {
+    padding: 40px 0;
+}
+#portfolio .into-title p,#portfolio .into-title h2{
+  text-align: center;
+}
+.filer-list li.nav-item {
+    padding: 5px 15px;
+}
+/*End Project*/
+/*About*/
+
+#feedback p {
+    font-size: 20px;
+    line-height: 28px;
+}
+.feedback .carousel-caption {
+    padding: 50px 0 30px !important;
+    display: block !important;
+}
+/*End About*/
+/*Service*/
+.home-inner-box {
+    padding: 15px;
+}
+.home-inner-box h3 {
+    font-size: 20px;
+}
+/*End Servie*/
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+ .navbar-brand img {
+    max-width: 140px;
+}
+/*Menu*/
+.navbar-b {
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+}
+div#navbarDefault {
+    margin-top: 20px;
+}
+.navbar-nav li.nav-item {
+    padding:0;
+}
+.navbar-nav li a {
+    padding: 2px 0 !important;
+}
+ul.navbar-nav.nav-right.list-unstyled {
+    margin-left: 0;
+}
+.nav-right li {
+    margin: 3px 0px;
+}
+.navbar-nav li.sign-button a,ul.navbar-nav.nav-right li a {
+    background:inherit;
+    color: #fff;
+    text-decoration: none;
+    padding:0 !important;
+}
+.navbar-nav li a:hover, .navbar-nav li a:focus {
+    color: #8747fe;
+    background:inherit;
+    border-radius: none;
+}
+/*Menu*/
+
+/*Home Slider*/
+section#slider {
+    padding: 110px 0 80px;
+}
+ .home-slider {
+    margin: 0px 0 30px;
+}
+.home-slider .slider-caption h2 {
+    font-size:35px;
+    line-height: 50px;
+    padding: 25px 0 15px;
+    text-align: center;
+}
+.home-slider .slider-caption span {
+    text-align: center;
+    display: block;
+}
+.home-slider .slider-caption p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.owl-theme.home-slider .owl-dots {
+    position: relative;
+}
+/*Home Slider*/
+  /*Footer*/
+.footer-top {
+    padding-top: 10px;
+    margin-top: -50px;
+  }
+.box-inner.footer-top-link {
+    margin-bottom: 0px;
+}
+footer#footer h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.footer-bottom p {
+    text-align: center;
+    margin-right:0;
+   
+}
+ul.footer-menu.list-unstyled.inline-block {
+    margin-left: 0;
+    text-align: center;
+}
+.footer-bottom {
+    border-top: 1px solid #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+}
+.footer-bottom li{
+  display: inline-block;
+}
+.footer-top-link li {
+  display:block;
+}
+/*End Footer*/
+
+/*Blog*/
+.inner-box {
+    margin-bottom: 40px;
+}
+p.blog-info {
+    margin-top: 15px;
+}
+section#blog {
+    padding-bottom: 50px;
+}
+/*End Blog*/
+/*Team*/
+.into-title h2{
+  text-align:center;
+}
+.into-title p{
+  text-align:center;
+}
+.team-info ul{
+  text-align: center;
+}
+.play-area {
+    height: auto;
+}
+
+.play-area img {
+    position: relative;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 120px;
+}
+#team {
+    padding: 70px 0 90px;
+}
+.team-info li span {
+    font-size: 50px;
+}
+.team-info li {
+    padding: 0 15px;
+}
+/*End Team*/
+/*Project*/
+section {
+    padding: 40px 0;
+}
+#portfolio .into-title p,#portfolio .into-title h2{
+  text-align: center;
+}
+
+/*End Project*/
+
+/*About*/
+#about .into-title h2 {
+    font-size: 20px;
+}
+#feedback p {
+    font-size: 15px;
+    line-height: 28px;
+}
+.feedback .carousel-caption {
+    padding: 50px 0 30px !important;
+    display: block !important;
+}
+/*End About*/
+/*Service*/
+.home-inner-box {
+    text-align: center;
+}
+.home-inner-box li {
+    text-align: left;
+}
+a.read-more {
+    text-align: left;
+}
+.home-inner-box {
+    min-height: auto;
+    padding: 25px 40px 20px;
+}
+.hover-back:hover img.hover-web {
+    text-align: center;
+    margin: 0 auto 30px;
+}
+section#slider {
+    padding: 120px 0 30px;
+}
+.bg-image{
+  background-position: 100% 100%;
+}
+/*End Service*/
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+/*Menu*/
+  .navbar-brand img {
+    max-width: 140px;
+}
+.navbar-b {
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+}
+div#navbarDefault {
+    margin-top: 20px;
+}
+.navbar-nav li.nav-item {
+    padding:0;
+}
+.navbar-nav li a {
+    padding: 2px 0 !important;
+}
+ul.navbar-nav.nav-right.list-unstyled {
+    margin-left: 0;
+}
+.nav-right li {
+    margin: 3px 0px;
+}
+.navbar-nav li.sign-button a,ul.navbar-nav.nav-right li a {
+    background:inherit;
+    color: #fff;
+    text-decoration: none;
+    padding:0 !important;
+}
+.navbar-nav li a:hover, .navbar-nav li a:focus {
+    color: #8747fe;
+    background:inherit;
+    border-radius: none;
+}
+/*Menu*/
+
+/*Home Slider*/
+ .home-slider {
+    margin: 0px 0 30px;
+}
+.home-slider .slider-caption h2 {
+    font-size: 28px;
+    line-height: 50px;
+    padding: 25px 0 15px;
+    text-align: center;
+}
+.home-slider .slider-caption span {
+    text-align: center;
+    display: block;
+}
+.home-slider .slider-caption p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+/*Home Slider*/
+.owl-theme.home-slider .owl-dots{
+  position: relative;
+}
+.feedback .carousel-caption{
+    display: block !important;
+}
+.feedback {
+    margin-top: 25px;
+}
+.into-title p,.into-title h2{
+  text-align: center;
+}
+.into-title h2 {
+    font-size: 35px;
+}
+/*Footer*/
+.footer-top {
+    padding-top: 10px;
+    margin-top: -40px;
+}
+.box-inner.footer-top-link {
+    margin-bottom: 0px;
+}
+footer#footer h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.footer-bottom p {
+    text-align: center;
+    margin-right:0;
+   
+}
+ul.footer-menu.list-unstyled.inline-block {
+    margin-left: 0;
+    text-align: center;
+}
+.footer-bottom {
+    border-top: 1px solid #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+}
+.footer-bottom li{
+  display: inline-block;
+}
+/*End Footer*/
+
+/*Blog*/
+.inner-box {
+    margin-bottom: 40px;
+}
+p.blog-info {
+    margin-top: 15px;
+}
+section#blog {
+    padding-bottom: 30px;
+}
+/*End Blog*/
+
+/*Team*/
+.into-title h2{
+  text-align:center;
+}
+.into-title p{
+  text-align:center;
+}
+.team-info ul{
+  text-align: center;
+}
+.play-area {
+    height: auto;
+}
+
+.play-area img {
+    position: relative;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 120px;
+}
+#team {
+    padding: 70px 0 90px;
+}
+.team-info li span {
+    font-size: 34px;
+}
+.team-info li {
+    padding: 0 10px;
+}
+/*End Team*/
+
+/*Project*/
+section {
+    padding: 40px 0;
+}
+#portfolio .into-title p,#portfolio .into-title h2{
+  text-align: center;
+}
+
+/*End Project*/
+
+/*About*/
+#about .into-title h2 {
+    font-size: 20px;
+}
+#feedback p {
+    font-size: 15px;
+    line-height: 28px;
+}
+.feedback .carousel-caption {
+    padding: 50px 0 30px !important;
+}
+/*End About*/
+
+/*Service*/
+.home-inner-box {
+    text-align: center;
+}
+.home-inner-box li {
+    text-align: left;
+}
+a.read-more {
+    text-align: left;
+}
+.home-inner-box {
+    min-height: auto;
+    padding: 20px 40px 15px;
+}
+.hover-back:hover img.hover-web {
+    text-align: center;
+    margin: 0 auto 30px;
+}
+section#slider {
+    padding: 120px 0 30px;
+}
+.bg-image{
+  background-position: 100% 100%;
+}
+/*End Service*/
+}
+
